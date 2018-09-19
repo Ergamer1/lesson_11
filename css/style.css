@@ -1,0 +1,77 @@
+body{
+	font-family: arial, sans-serif;
+	font-size: 16px;
+	color: #000;
+	line-height: 1.3;
+	background: #FFF;
+	min-width: 800px;
+}
+.container{
+	width: 800px;
+	margin: 0 auto;
+}
+.block{
+ 	padding: 40px;
+}
+.form-block{
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+.form-row{
+ 	padding: 0 0 20px;
+}
+.form-row .field{
+ 	width: 100%;
+ 	border: 1px solid #ccc;
+ 	border-radius: 5px;
+ 	box-shadow:  1px 1px 3px 0px rgba(50, 50, 50, 0.75);
+ 	color: green;
+ 	font-style: italic;
+ 	font-size: 13px;
+ 	padding: 5px 3px;
+}
+.form-row .field:focus{
+ 	background: pink;
+}
+.form-row label{
+ 	display: block;
+ 	padding-bottom: 0 0 5px;
+}
+.form-row span{
+ 	display: block;
+ 	padding-bottom: 0 0 5px;
+}
+.form-row input[type="checkbox"] + label{
+ 	position: relative;
+ 	padding-left: 30px;
+}
+.form-row input[type="checkbox"]{
+ 	display: none;
+}
+.form-row input[type="checkbox"] + label::before{
+ 	content: "";
+ 	position: absolute;
+ 	top: -2px;
+ 	left: 0;
+ 	width: 20px;
+ 	height: 20px;
+ 	background: url(../img/ckeck-radio.jpg) -2px 0 no-repeat;
+}
+.form-row input[type="checkbox"]:checked + label::before{
+ 	background-position: -2px -24px;
+}
+.form-row .select{
+ 	width: 300px;
+ 	border: 1px solid #ccc;
+ 	border-radius: 5px;
+ 	box-shadow:  1px 1px 3px 0px rgba(50, 50, 50, 0.75);
+ 	color: green;
+ 	font-style: italic;
+ 	font-size: 13px;
+ 	padding: 5px 3px;
+}
+.form-row .select option{
+ 	color: green;
+ 	font-weight: bold;
+}
